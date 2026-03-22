@@ -43,14 +43,14 @@ if st.button("🔍 Predict AQI"):
 
     # Health category
     if prediction <= 50:
-        st.success("✅ Good — Air quality is satisfactory. Safe for outdoor activities.")
+        st.success("Good — Air quality is satisfactory. Safe for outdoor activities.")
     elif prediction <= 100:
-        st.success("🟡 Satisfactory — Air quality is acceptable.")
+        st.success("Satisfactory — Air quality is acceptable.")
     elif prediction <= 200:
-        st.warning("⚠️ Moderate — Sensitive groups should take care.")
+        st.warning("Moderate — Sensitive groups should take care.")
     elif prediction <= 300:
-        st.error("😷 Poor — Everyone may experience health effects. Wear a mask.")
+        st.error("Poor — Everyone may experience health effects. Wear a mask.")
     elif prediction <= 400:
-        st.error("🚨 Very Poor — Avoid outdoor activities.")
+        st.error("Very Poor — Avoid outdoor activities.")
     else:
-        st.error("☠️ Severe — Stay indoors. Seek medical help if needed.")
+        st.error("Severe — Stay indoors. Seek medical help if needed.")
